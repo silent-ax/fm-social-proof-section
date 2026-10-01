@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 /* =========================
 LAYERS
 ========================= */
@@ -174,9 +175,14 @@ BASE
 ========================= */
 @layer base {
   :root {
-    /* =========================
-    TODO: CONFIG
-    ========================= */
+    /* ### primary */
+    --color-very-dark-magenta: hsl(300, 43%, 22%);
+    --color-soft-pink: hsl(333, 80%, 67%);
+
+    /* ### neutral */
+    --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --color-light-grayish-magenta: hsl(300, 24%, 96%);
+    --color-white: hsl(0, 0%, 100%);
 
     --fz-xs: 0.6rem;
     --fz-sm: 0.8rem;
@@ -192,11 +198,14 @@ BASE
     --sp-lg: 1.5rem;
     --sp-xl: 2rem;
     --sp-xxl: 3rem;
+
+    --font-league-spartan: "League Spartan", sans-serif;
   }
 
   body {
-    font-family: sans-serif;
+    font-family: var(--font-league-spartan);
     -webkit-font-smoothing: antialiased;
+    font-size: 15px;
   }
 }
 
@@ -216,4 +225,5 @@ UTILITIES
 RESPONSIVE
 ========================= */
 @layer responsive {
+  /* - Mobile: 375px */
 }
